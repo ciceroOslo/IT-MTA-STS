@@ -5,7 +5,7 @@ Preferred-Languages: no,en
 Canonical: https://mta-sts.cicero.oslo.no/.well-known/security.txt
 Policy: https://cicero.oslo.no/en/about/privacy-policy
 Hiring: https://cicero.oslo.no/en/about/work-at-cicero
-Expires: 2024-02-01T00:00:00.000Z
+Expires: 2025-02-01T00:00:00.000Z
 -----BEGIN PGP SIGNATURE-----
 
 
