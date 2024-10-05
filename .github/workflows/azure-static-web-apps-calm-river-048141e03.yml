@@ -16,7 +16,9 @@ jobs:
     name: Build and Deploy Job
     steps:
       # Checkout the repository
-      - uses: actions/checkout@v3
+      # The specified version is 'v4', 
+      # which is not a valid version as of the latest release. The latest stable version is 'v3'.
+      - uses: actions/checkout@v4
         with:
           submodules: true
           lfs: false
