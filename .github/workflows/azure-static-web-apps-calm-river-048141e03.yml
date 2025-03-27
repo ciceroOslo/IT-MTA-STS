@@ -15,10 +15,15 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v3
+      # Checkout the repository
+      # The specified version is 'v4', 
+      # which is not a valid version as of the latest release. The latest stable version is 'v3'.
+      - uses: actions/checkout@v4
         with:
           submodules: true
           lfs: false
+
+      # Build and deploy the app    
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -38,6 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Close Pull Request Job
     steps:
+      # Close the pull request
       - name: Close Pull Request
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1

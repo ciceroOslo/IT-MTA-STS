@@ -1,0 +1,48 @@
+{
+    "id": "did:web:cicero.oslo.no",
+    "@context": [
+      "https://www.w3.org/ns/did/v1",
+      {
+        "@base": "did:web:cicero.oslo.no"
+      }
+    ],
+    "service": [
+      {
+        "id": "#linkeddomains",
+        "type": "LinkedDomains",
+        "serviceEndpoint": {
+          "origins": [
+            "https://cicero.oslo.no/"
+          ]
+        }
+      },
+      {
+        "id": "#hub",
+        "type": "IdentityHub",
+        "serviceEndpoint": {
+          "instances": [
+            "https://hub.did.msidentity.com/v1.0/87ea3ab6-0d34-424e-a0c4-cda82a2494bc"
+          ]
+        }
+      }
+    ],
+    "verificationMethod": [
+      {
+        "id": "#17b96f059f6d466188f150a07e0e73e9vcSigningKey-d3b57",
+        "controller": "did:web:cicero.oslo.no",
+        "type": "EcdsaSecp256k1VerificationKey2019",
+        "publicKeyJwk": {
+          "crv": "secp256k1",
+          "kty": "EC",
+          "x": "k_kVwRz73I626CwLQFFaa_RjyDFc94tUh9_dR-1cUN0",
+          "y": "q80Owg0Zjhupu4Vs4unudDKFUeSxs14RXmhexKzcNeo"
+        }
+      }
+    ],
+    "authentication": [
+      "#17b96f059f6d466188f150a07e0e73e9vcSigningKey-d3b57"
+    ],
+    "assertionMethod": [
+      "#17b96f059f6d466188f150a07e0e73e9vcSigningKey-d3b57"
+    ]
+  }
